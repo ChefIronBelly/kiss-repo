@@ -1,0 +1,8 @@
+#!/bin/sh -e
+
+./configure --prefix=/usr     \
+        --sysconfdir=/etc \
+        --docdir=/usr/share/doc/pm-utils-1.4.1 &&
+make
+
+make DESTDIR="$1" install
