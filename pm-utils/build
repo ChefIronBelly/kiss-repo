@@ -1,4 +1,5 @@
 #!/bin/sh -e
+# removed docs 
 
 ./configure --prefix=/usr     \
         --sysconfdir=/etc && 
